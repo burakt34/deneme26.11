@@ -9,7 +9,7 @@ const page = async ({params}) => {
         <div>
             {
                 data.data.map((veri, idx) => (
-                    <Link className='block md:flex gap-3 m-3 bg-slate-100 p-4 rounded-md ' href={`/${params.locale}/${veri.attributes.slug}`} key={idx}>
+                    <Link className='block md:flex gap-3 m-3 bg-slate-100 p-4 rounded-md ' href={`/${params.locale}/${veri.attributes.slug}`} key={idx} >
                         <div className='flex items-center justify-center md:block md:w-3/12 overflow-hidden '>
                             <img className='hover:scale-125 transition-all duration-500 cursor-pointer w-52 h-52 object-cover rounded-md' src={"http://localhost:1337" + veri.attributes.img.data.attributes.formats.thumbnail.url} alt="" />
                         </div>
